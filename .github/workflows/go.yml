@@ -20,5 +20,8 @@ jobs:
         shell: bash
     name: ${{ matrix.go }} on ${{ matrix.os }}
     steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+
     - run: go test ./... -coverprofile=coverage.txt -covermode=atomic
 
