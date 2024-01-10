@@ -1,0 +1,4 @@
+mode: atomic
+learn-go/main.go:8.13,19.2 7 0
+learn-go/main.go:21.26,23.2 1 0
+learn-go/main.go:25.21,27.2 1 1
