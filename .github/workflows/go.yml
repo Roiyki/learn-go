@@ -20,6 +20,10 @@ jobs:
         shell: bash
     name: ${{ matrix.go }} on ${{ matrix.os }}
     steps:
+    - uses: actions/setup-go@v4
+      with:
+        go-version: ${{ matrix.go }}
+
     - name: Check out code
       uses: actions/checkout@v4
 
