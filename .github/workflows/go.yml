@@ -21,7 +21,7 @@ jobs:
     name: ${{ matrix.go }} on ${{ matrix.os }}
     steps:
     - name: Check out code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - run: go test ./... -coverprofile=coverage.txt -covermode=atomic
 
